@@ -8,6 +8,7 @@ Hackathons comming soon!!! :-)
 Resources
 ==========
 
+* test
 * http://en.wikipedia.org/wiki/Hackathon
 * http://scalathon.org/index.html
 * http://blogs.perl.org/users/domm/2010/04/perl-qa-hackthon-day-1.html
