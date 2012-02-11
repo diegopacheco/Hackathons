@@ -12,6 +12,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="com.springsource.sts.grails.core.CLASSPATH_CONTAINER"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_SUPPORT"/>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-2.0.0.jar"/>
 	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-bootstrap-2.0.0.jar"/>
 	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-core-2.0.0.jar"/>
@@ -44,5 +45,8 @@
 	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-test-suite-base-2.0.0.jar"/>
 	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-web-2.0.0.jar"/>
 	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-webflow-2.0.0.jar"/>
+=======
+	<classpathentry kind="lib" path="lib"/>
+>>>>>>> 8e3a729cfd12bcb964c1a7756d9aeab9e9bbe6ba
 	<classpathentry kind="output" path="web-app/WEB-INF/classes"/>
 </classpath>
