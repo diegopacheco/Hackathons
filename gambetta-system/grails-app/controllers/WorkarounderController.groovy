@@ -1,3 +1,3 @@
 class WorkarounderController {
-    static scaffold = true
+    static scaffold = Book
 }
