@@ -12,41 +12,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="com.springsource.sts.grails.core.CLASSPATH_CONTAINER"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_SUPPORT"/>
-<<<<<<< HEAD
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-bootstrap-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-core-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-crud-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-docs-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-hibernate-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-logging-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-plugin-async-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-plugin-codecs-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-plugin-controllers-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-plugin-converters-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-plugin-datasource-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-plugin-domain-class-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-plugin-filters-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-plugin-gsp-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-plugin-i18n-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-plugin-log4j-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-plugin-mimetypes-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-plugin-scaffolding-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-plugin-services-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-plugin-servlets-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-plugin-testing-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-plugin-tomcat-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-plugin-url-mappings-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-plugin-validation-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-resources-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-scripts-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-spring-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-test-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-test-suite-base-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-web-2.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/diego/bin/grails-2.0.0/dist/grails-webflow-2.0.0.jar"/>
-=======
 	<classpathentry kind="lib" path="lib"/>
->>>>>>> 8e3a729cfd12bcb964c1a7756d9aeab9e9bbe6ba
 	<classpathentry kind="output" path="web-app/WEB-INF/classes"/>
 </classpath>
