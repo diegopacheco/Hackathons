@@ -1,5 +1,5 @@
 public class Workarounder {
-	def name
-	def email
-	def twitter	
+	String name
+	String email
+	String twitter	
 }
