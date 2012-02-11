@@ -7,11 +7,11 @@ Hackathons comming soon!!! :-)
 Ideas
 =====
 
-Metric system
-Extra hours table
-Annotation system (scan dev annotation from code source ot extract data)
-Test generation based on an endpoint
-Gambetta system
+* Metric system
+* Extra hours table
+* Annotation system (scan dev annotation from code source ot extract data)
+* Test generation based on an endpoint
+* Gambetta system
 
 
 Resources
