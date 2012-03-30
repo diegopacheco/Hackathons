@@ -97,16 +97,18 @@ p {
 			<g:each in="${workarounders}" status="i" var="workarounderInstance">
 				<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 
-					<td><g:link action="show" id="${workarounderInstance.id}">
+					<td><g:link controller="Workarounder" action="show" id="${workarounderInstance.id}">
 							${fieldValue(bean: workarounderInstance, field: "name")}
 						</g:link></td>
 					<td>
 						${fieldValue(bean: workarounderInstance, field: "currentdebits")}
 					</td>
 
-					<td>
+					<td><g:link controller="Debit" 
+								action="list" 
+								params="[debitInstanceList: workarounderInstance.debits]">
 						${fieldValue(bean: workarounderInstance, field: "totalDebits")}
-					</td>
+					</g:link></td>
 				</tr>
 			</g:each>
 		</table>
