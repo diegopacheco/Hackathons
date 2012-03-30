@@ -37,6 +37,7 @@ grails.project.dependency.resolution = {
 		runtime 'junit:junit:4.7'
 		runtime 'javax.activation:activation:1.1.1'
 	    runtime 'javax.mail:mail:1.4.3'
+		runtime 'org.twitter4j:twitter4j-core:2.2.5'
     }
 
     plugins {
