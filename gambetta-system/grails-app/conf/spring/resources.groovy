@@ -4,8 +4,8 @@ beans = {
 	mailSender(org.springframework.mail.javamail.JavaMailSenderImpl) {
 		host = 'smtp.gmail.com'
 		port = 465
-		username = 'alexandrepoletto@gmail.com'
-		password = 'rune.e28'
+		username = 'sheep.gambettinha@gmail.com'
+		password = 'g@mbettinh@'
 		javaMailProperties = ['mail.smtp.auth': 'true',
             'mail.smtp.socketFactory.port': '465',
             'mail.smtp.socketFactory.class': 'javax.net.ssl.SSLSocketFactory',
