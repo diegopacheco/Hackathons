@@ -45,8 +45,15 @@ body {
 
 #grailsLogo {
 	background-color: #abbf78;
+	position:relative;
 }
 
+#bannerTitle{
+	position: absolute;
+	font-size: 3em;
+	left:35%;
+	top:0em;
+}
 /* replace with .no-boxshadow body if you have modernizr available */
 .ie6 body,
 .ie7 body,
