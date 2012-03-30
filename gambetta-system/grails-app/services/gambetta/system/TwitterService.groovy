@@ -15,6 +15,7 @@ class TwitterService{
    Twitter twitter = null
    
    public TwitterService(){
+		//TODO: put it inside DATABASE
         cb.setDebugEnabled(true)
           .setOAuthConsumerKey("7KhiEFkUqWMySaS747Xt7g")
           .setOAuthConsumerSecret("JnFs1kZCgmFqe0OZlqGUar5NZDmQrmSNFDayUjmvds")
@@ -27,7 +28,7 @@ class TwitterService{
         try {          
               try{
                  RequestToken requestToken = twitter.getOAuthRequestToken()
-                 accessToken = twitter.getOAuthAccessToken(requestToken, pin)
+                 accessToken = twitter.getOAuthAccessToken(requestToken)
               }catch(IllegalStateException ise){
                  // Yeah, it sucks! This API make us do that, this is a workaround forced by the API - Suck it up Poletto!
                  // Cuervo... Code man Code !!!
