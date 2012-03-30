@@ -1,5 +1,6 @@
+package gambetta.system
 
-import grails.test.mixin.TestFor
+import grails.test.mixin.*
 import org.junit.*
 
 /**
@@ -9,6 +10,6 @@ import org.junit.*
 class WorkarounderControllerTests {
 
     void testSomething() {
-       //fail "Implement me"
+       fail "Implement me"
     }
 }
