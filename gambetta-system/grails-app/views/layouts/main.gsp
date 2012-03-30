@@ -19,7 +19,7 @@
 	</head>
 	<body>
 		<div id="grailsLogo" role="banner">
-			<a href="http://grails.org"><img src="${resource(dir: 'images', file: 'gambettinha.jpg')}" alt="Gambetta"/></a>
+			<a href="${createLink(uri: '/')}"><img src="${resource(dir: 'images', file: 'gambettinha.jpg')}" alt="Gambetta"/></a>
 			<div id="bannerTitle"><h1>Gambetta's System</h1></div>
 		</div>
 		<g:layoutBody/>
