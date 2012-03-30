@@ -5,17 +5,17 @@ package gambetta.system
  */
 
 class MailController {
-    MailService  emailerService
+    MailService  mailService
     // Send an email
-    def index = {
+    def send  = {
         // Each "email" is a simple Map
         def email = [
-            to: [ params.to ],        // "to" expects a List, NOT a single email address
-            subject: params.subject,
-            text: params.body         // "text" is the email body
+            to: [ "mayer1990@gmail.com", "alexandrepoletto@gmail.com"  ],        // "to" expects a List, NOT a single email address
+            subject: "teste" ,
+            text: "testando"         // "text" is the email body
         ]
         // sendEmails expects a List
-        emailerService.sendEmails([email])
+	    mailService.sendEmails([email])
         render("done")
     }
 }

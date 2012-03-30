@@ -20,14 +20,11 @@ class TweetController {
     }
 
     def save() {
-        def tweetInstance = new Tweet(params)
-        if (!tweetInstance.save(flush: true)) {
-            render(view: "create", model: [tweetInstance: tweetInstance])
-            return
-        }
-
-		flash.message = message(code: 'default.created.message', args: [message(code: 'tweet.label', default: 'Tweet'), tweetInstance.id])
-        redirect(action: "show", id: tweetInstance.id)
+		def x = new TwitterService()
+		def result = x.tweet("${params.msg} ${new java.util.Date()}",params.pin)
+		
+		flash.message = message(code: 'default.created.message', args: [message(code: 'tweet.label', default: 'Tweet'), 1])
+        redirect(action: "show", id: 1)
     }
 
     def show() {
