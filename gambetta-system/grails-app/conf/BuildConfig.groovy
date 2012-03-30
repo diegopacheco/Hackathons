@@ -35,6 +35,8 @@ grails.project.dependency.resolution = {
 		
         // runtime 'mysql:mysql-connector-java:5.1.16'
 		runtime 'junit:junit:4.7'
+		runtime 'javax.activation:activation:1.1.1'
+	    runtime 'javax.mail:mail:1.4.3'
     }
 
     plugins {
