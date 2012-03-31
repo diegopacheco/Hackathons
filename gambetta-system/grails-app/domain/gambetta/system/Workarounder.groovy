@@ -3,6 +3,11 @@ package gambetta.system
 import java.util.List
 
 public class Workarounder {
+	
+	List debits
+	
+	static hasMany = [debits: Debit]
+	
 	String name
 	String email
 	String twitter
