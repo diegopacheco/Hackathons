@@ -6,7 +6,7 @@ public class Tweet {
 		
 	static constraints = {
 		pin(blank:false)
-		msg(blank:false)
+		msg(maxLength:120,blank:false)
 	}
 	
 }
