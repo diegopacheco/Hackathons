@@ -39,6 +39,29 @@
 
 #page-body {
 	margin: 2em 1em 1.25em 18em;
+	float: left;
+}
+
+#page-margin {
+	margin: 2em 1em 1.25em 4em;
+	float: left;
+}
+
+.grid_container {
+	padding-left: 3em;
+	padding-right: 3em;
+}
+
+.grids {
+	overflow: hidden;
+}
+
+.g1of2 {
+	width: 50%;
+}
+
+.g1of2,.g1of3,.g1of4,.g1of5,.g2of3,.g2of5,.g3of4,.g3of5,.g4of5 {
+	float: left;
 }
 
 h2 {
@@ -76,7 +99,23 @@ p {
 <body>
 	<a href="#page-body" class="skip"><g:message
 			code="default.link.skip.label" default="Skip to content&hellip;" /></a>
-	<div id="page-body" role="main">
+
+	<div class="grid_container">
+		<div class="grids">
+			<div class="g1of2">
+				<div id="controller-list" role="navigation">
+					<h2>Available Controllers:</h2>
+					<ul>
+						<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
+							<li class="controller">
+								<g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link>
+							</li>
+						</g:each>
+					</ul>
+				</div>
+			</div>
+			<div class="g1of2">
+
 		<h1>Welcome to Gambettinha system</h1>
 		<p>Discipline rules!!</p>
 		<h2>Worarounders</h2>
@@ -97,33 +136,24 @@ p {
 			<g:each in="${workarounders}" status="i" var="workarounderInstance">
 				<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 
-					<td><g:link action="show" id="${workarounderInstance.id}">
+					<td><g:link controller="Workarounder" action="show"
+							id="${workarounderInstance.id}">
 							${fieldValue(bean: workarounderInstance, field: "name")}
 						</g:link></td>
 					<td>
 						${fieldValue(bean: workarounderInstance, field: "currentdebits")}
 					</td>
 
-					<td>
-						${fieldValue(bean: workarounderInstance, field: "totalDebits")}
-					</td>
+					<td><g:link controller="Debit" action="list"
+							params="[debitInstanceList: workarounderInstance.debits]">
+							${fieldValue(bean: workarounderInstance, field: "totalDebits")}
+						</g:link></td>
 				</tr>
 			</g:each>
 		</table>
 
 
-
-		<div id="controller-list" role="navigation">
-			<h2>Available Controllers:</h2>
-			<ul>
-				<g:each var="c"
-					in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-					<li class="controller"><g:link
-							controller="${c.logicalPropertyName}">
-							${c.fullName}
-						</g:link></li>
-				</g:each>
-			</ul>
+			</div>
 		</div>
 	</div>
 </body>
