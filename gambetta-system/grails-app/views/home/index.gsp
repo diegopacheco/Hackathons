@@ -103,6 +103,16 @@ p {
 	<div class="grid_container">
 		<div class="grids">
 			<div class="g1of2">
+				<h2>Add:</h2>
+				<ul>
+					<li><g:link controller="Debit" action="create">Add debit</g:link></li>
+					<li><g:link controller="Workarounder" action="create">Add workarounder</g:link></li>
+					<li><g:link controller="Fault" action="create">Add fault</g:link></li>
+				</ul>
+				<h2>Actions</h2>
+				<ul>
+					<li><g:link controller="Tweet" action="create">Tweet</g:link></li>
+				</ul>
 				<div id="controller-list" role="navigation">
 					<h2>Available Controllers:</h2>
 					<ul>
@@ -116,24 +126,23 @@ p {
 			</div>
 			<div class="g1of2">
 
-		<h1>Welcome to Gambettinha system</h1>
-		<p>Discipline rules!!</p>
-		<h2>Worarounders</h2>
-		<table>
-			<thead>
-				<tr>
+				<h1>Welcome to Gambettinha system</h1>
+				<p>Discipline rules!!</p>
+				<h2>Worarounders</h2>
+				<table>
+					<thead>
+						<tr>
+							<g:sortableColumn property="name"
+							title="${message(code: 'workarounder.name.label', default: 'Name')}" />
 
-					<g:sortableColumn property="name"
-						title="${message(code: 'workarounder.name.label', default: 'Name')}" />
+							<g:sortableColumn property="currentdebits"
+							title="${message(code: 'workarounder.currentdebits.label', default: 'Currentdebits')}" />
 
-					<g:sortableColumn property="currentdebits"
-						title="${message(code: 'workarounder.currentdebits.label', default: 'Currentdebits')}" />
-
-					<g:sortableColumn property="totalDebits"
-						title="${message(code: 'workarounder.totalDebits.label', default: 'Total Debits')}" />
-				</tr>
-			</thead>
-			<g:each in="${workarounders}" status="i" var="workarounderInstance">
+							<g:sortableColumn property="totalDebits"
+							title="${message(code: 'workarounder.totalDebits.label', default: 'Total Debits')}" />
+						</tr>
+					</thead>
+				<g:each in="${workarounders}" status="i" var="workarounderInstance">
 				<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 
 					<td><g:link controller="Workarounder" action="show"
