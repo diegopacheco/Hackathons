@@ -1,4 +1,5 @@
 <%@ page import="gambetta.system.Debit" %>
+<g:javascript plugin="jquery" library="jquery" />
 <!doctype html>
 <html>
 	<head>
