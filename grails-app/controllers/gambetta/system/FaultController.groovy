@@ -5,7 +5,6 @@ class FaultController {
 	
 	def getFaultValue = {
 		def fault = Fault.get(params.id)
-		println fault;
 		render fault?.price
 	}
 }
