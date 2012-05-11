@@ -18,7 +18,7 @@
             action:'getFaultValue', 
             params:'\'id=\' + this.value', 
             onComplete:'updatePrice(XMLHttpRequest)')}"
-	   optionKey="id" optionValue="name" value="${debitInstance?.faultDescription}"/>
+	   optionKey="id" optionValue="name" value="${debitInstance?.faultDescription}" noSelection="['':'-Choose The Fault-']"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: debitInstance, field: 'workarounder', 'error')} required">
