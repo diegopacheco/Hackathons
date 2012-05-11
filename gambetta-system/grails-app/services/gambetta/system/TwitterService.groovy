@@ -14,13 +14,14 @@ class TwitterService{
    ConfigurationBuilder cb = new ConfigurationBuilder()
    Twitter twitter = null
    
-   public TwitterService(){
+   public TwitterService(TweetAcountInformation tweetAcountInformation){
 		//TODO: put it inside DATABASE
+		
         cb.setDebugEnabled(true)
-          .setOAuthConsumerKey("7KhiEFkUqWMySaS747Xt7g")
-          .setOAuthConsumerSecret("JnFs1kZCgmFqe0OZlqGUar5NZDmQrmSNFDayUjmvds")
-          .setOAuthAccessToken("229474714-8rCHl1cJ7lHXf1lsl2qQx5MFA03C1xBEGtJkWBqV")
-          .setOAuthAccessTokenSecret("Bg0bO3Yk5x52Wico1XdvondMnJF0NLHNxM7k1zUZOM")
+          .setOAuthConsumerKey(tweetAcountInformation.oAuthConsumerKey)
+          .setOAuthConsumerSecret(tweetAcountInformation.oAuthConsumerSecret)
+          .setOAuthAccessToken(tweetAcountInformation.oAuthAccessToken)
+          .setOAuthAccessTokenSecret(tweetAcountInformation.oAuthAccessTokenSecret)
         twitter = new TwitterFactory(cb.build()).getInstance()
    }
                   
