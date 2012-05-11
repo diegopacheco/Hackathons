@@ -34,6 +34,23 @@
 	<g:field type="number" name="currentdebits" min="0.1" required="" value="${fieldValue(bean: workarounderInstance, field: 'currentdebits')}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: workarounderInstance, field: 'debits', 'error')} ">
+	<label for="debits">
+		<g:message code="workarounder.debits.label" default="Debits" />
+		
+	</label>
+	
+<ul class="one-to-many">
+<g:each in="${workarounderInstance?.debits?}" var="d">
+    <li><g:link controller="debit" action="show" id="${d.id}">${d?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="debit" action="create" params="['workarounder.id': workarounderInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'debit.label', default: 'Debit')])}</g:link>
+</li>
+</ul>
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: workarounderInstance, field: 'twitter', 'error')} ">
 	<label for="twitter">
 		<g:message code="workarounder.twitter.label" default="Twitter" />

@@ -59,6 +59,17 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${workarounderInstance?.debits}">
+				<li class="fieldcontain">
+					<span id="debits-label" class="property-label"><g:message code="workarounder.debits.label" default="Debits" /></span>
+					
+						<g:each in="${workarounderInstance.debits}" var="d">
+						<span class="property-value" aria-labelledby="debits-label"><g:link controller="debit" action="show" id="${d.id}">${d?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${workarounderInstance?.twitter}">
 				<li class="fieldcontain">
 					<span id="twitter-label" class="property-label"><g:message code="workarounder.twitter.label" default="Twitter" /></span>

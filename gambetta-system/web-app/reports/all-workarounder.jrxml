@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="all-workarounder" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.4641000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="twitter" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="totalDebits" class="java.lang.Float"/>
+	<field name="currentdebits" class="java.lang.Float"/>
+	<pageHeader>
+		<band height="88">
+			<image>
+				<reportElement x="25" y="0" width="75" height="75"/>
+				<imageExpression class="java.lang.String"><![CDATA["C:\\workarea\\workspaces\\unisinos\\gambetta\\Hackathons\\gambetta-system\\web-app\\images\\gambettinha.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="104" y="26" width="377" height="27" forecolor="#009966"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gambetta's System]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="158" height="20"/>
+				<box leftPadding="3">
+					<pen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<topPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<leftPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<bottomPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<rightPen lineWidth="0.25" lineColor="#EAEAEA"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="158" y="0" width="128" height="20"/>
+				<box leftPadding="3">
+					<pen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<topPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<leftPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<bottomPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<rightPen lineWidth="0.25" lineColor="#EAEAEA"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="286" y="0" width="73" height="20"/>
+				<box leftPadding="3">
+					<pen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<topPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<leftPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<bottomPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<rightPen lineWidth="0.25" lineColor="#EAEAEA"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Total Debits]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="359" y="0" width="86" height="20"/>
+				<box leftPadding="3">
+					<pen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<topPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<leftPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<bottomPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<rightPen lineWidth="0.25" lineColor="#EAEAEA"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Current Debits]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="445" y="0" width="110" height="20"/>
+				<box leftPadding="3">
+					<pen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<topPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<leftPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<bottomPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<rightPen lineWidth="0.25" lineColor="#EAEAEA"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Twitter]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="158" height="20" isPrintWhenDetailOverflows="true"/>
+				<box leftPadding="3">
+					<pen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<topPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<leftPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<bottomPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<rightPen lineWidth="0.25" lineColor="#EAEAEA"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="445" y="0" width="110" height="20" isPrintWhenDetailOverflows="true"/>
+				<box leftPadding="3">
+					<pen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<topPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<leftPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<bottomPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<rightPen lineWidth="0.25" lineColor="#EAEAEA"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{twitter}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="359" y="0" width="86" height="20" isPrintWhenDetailOverflows="true"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="3">
+					<pen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<topPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<leftPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<bottomPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<rightPen lineWidth="0.25" lineColor="#EAEAEA"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{currentdebits}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="284" y="0" width="75" height="20" isPrintWhenDetailOverflows="true"/>
+				<box leftPadding="0" bottomPadding="0" rightPadding="3">
+					<pen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<topPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<leftPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<bottomPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<rightPen lineWidth="0.25" lineColor="#EAEAEA"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{totalDebits}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="158" y="0" width="126" height="20" isPrintWhenDetailOverflows="true"/>
+				<box leftPadding="3">
+					<pen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<topPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<leftPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<bottomPen lineWidth="0.25" lineColor="#EAEAEA"/>
+					<rightPen lineWidth="0.25" lineColor="#EAEAEA"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

@@ -20,6 +20,7 @@
 			<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
+			<g:jasperReport controller="Workarounder" action="createReport" jasper="all-workarounder" format="PDF" name="Workarounders" />
 			<table>
 				<thead>
 					<tr>
