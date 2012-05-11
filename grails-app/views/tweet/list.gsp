@@ -24,8 +24,6 @@
 				<thead>
 					<tr>
 					
-						<g:sortableColumn property="pin" title="${message(code: 'tweet.pin.label', default: 'Pin')}" />
-					
 						<g:sortableColumn property="msg" title="${message(code: 'tweet.msg.label', default: 'Msg')}" />
 					
 					</tr>
@@ -33,8 +31,6 @@
 				<tbody>
 				<g:each in="${tweetInstanceList}" status="i" var="tweetInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
-					
-						<td><g:link action="show" id="${tweetInstance.id}">${fieldValue(bean: tweetInstance, field: "pin")}</g:link></td>
 					
 						<td>${fieldValue(bean: tweetInstance, field: "msg")}</td>
 					

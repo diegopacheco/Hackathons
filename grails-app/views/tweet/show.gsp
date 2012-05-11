@@ -23,15 +23,6 @@
 			</g:if>
 			<ol class="property-list tweet">
 			
-				<g:if test="${tweetInstance?.pin}">
-				<li class="fieldcontain">
-					<span id="pin-label" class="property-label"><g:message code="tweet.pin.label" default="Pin" /></span>
-					
-						<span class="property-value" aria-labelledby="pin-label"><g:fieldValue bean="${tweetInstance}" field="pin"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${tweetInstance?.msg}">
 				<li class="fieldcontain">
 					<span id="msg-label" class="property-label"><g:message code="tweet.msg.label" default="Msg" /></span>
