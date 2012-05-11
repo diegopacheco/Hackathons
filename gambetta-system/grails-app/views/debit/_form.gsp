@@ -2,8 +2,7 @@
 
 <g:javascript>
 	function updatePrice(e){
-		alert(e);
-		document.getElementById("price").value = eval(e);
+		document.getElementById("price").value = e.responseText;
 	}
 </g:javascript>
 
@@ -12,13 +11,14 @@
 		<g:message code="debit.faultDescription.label" default="Fault Description" />
 
 	</label>
+	
 	<g:select name="faultDescription" from="${gambetta.system.Fault.list()}"
 		onchange="${remoteFunction(
             controller:'fault', 
             action:'getFaultValue', 
-            params:'\'id=\' + escape(this.key)', 
-            onComplete:'updatePrice(e)')}"
-	   optionKey="id" optionValue="name" value="${debitInstance?.faultDescription}"/>
+            params:'\'id=\' + this.value', 
+            onComplete:'updatePrice(XMLHttpRequest)')}"
+	   optionKey="id" optionValue="name" value="${debitInstance?.faultDescription}" noSelection="['':'-Choose The Fault-']"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: debitInstance, field: 'workarounder', 'error')} required">
@@ -42,6 +42,6 @@
 		<g:message code="debit.value.label" default="Value" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:field type="number" name="value" min="0.5" required="" value="${fieldValue(bean: debitInstance, field: 'value')}" id="price"/>
+	<g:field name="value" value="${fieldValue(bean: debitInstance, field: 'value')}" id="price" readonly="true"/>
 </div>
 
