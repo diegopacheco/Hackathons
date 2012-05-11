@@ -21,11 +21,11 @@ class TwitterService{
         twitter = new TwitterFactory(cb.build()).getInstance()
    }
                   
-   def tweet(msg,pin){
+   def tweet(msg){
         try {          
               try{
                  RequestToken requestToken = twitter.getOAuthRequestToken()
-                 accessToken = twitter.getOAuthAccessToken(requestToken, pin)
+                 accessToken = twitter.getOAuthAccessToken(requestToken)
               }catch(IllegalStateException ise){
                  // Yeah, it sucks! This API make us do that, this is a workaround forced by the API - Suck it up Poletto!
                  // Cuervo... Code man Code !!!
