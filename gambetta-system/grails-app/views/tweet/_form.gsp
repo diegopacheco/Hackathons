@@ -15,6 +15,6 @@
 		<g:message code="tweet.msg.label" default="Msg" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="msg" required="" value="${tweetInstance?.msg}"/>
+	<g:textArea name="msg" required="" value="${tweetInstance?.msg}"/>
 </div>
 
