@@ -50,6 +50,7 @@
 .grid_container {
 	padding-left: 3em;
 	padding-right: 3em;
+	clear: both;
 }
 
 .grids {

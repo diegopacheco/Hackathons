@@ -43,16 +43,20 @@ body {
 	        box-shadow: 0 0 0.3em #255b17;
 }
 
-#grailsLogo {
+#header {
 	background-color: #abbf78;
-	position:relative;
+	height: 8em;
+}
+
+#logo {
+	float: left;
+	margin: 1em;
 }
 
 #bannerTitle{
-	position: absolute;
-	font-size: 3em;
-	left:35%;
-	top:0em;
+	float: right;
+	font-size: 2.5em;
+	margin-right: 6em;
 }
 /* replace with .no-boxshadow body if you have modernizr available */
 .ie6 body,
@@ -118,6 +122,8 @@ img {
 	margin-top: 1.5em;
 	padding: 1em;
 	min-height: 1em;
+	text-align: center;
+	
 }
 
 .footer a {
