@@ -24,7 +24,7 @@ class TwitterService{
         twitter = new TwitterFactory(cb.build()).getInstance()
    }
                   
-   def tweet(msg,pin){
+   def tweet(msg){
         try {          
               try{
                  RequestToken requestToken = twitter.getOAuthRequestToken()

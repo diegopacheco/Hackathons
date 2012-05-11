@@ -21,7 +21,7 @@ class TweetController {
 
     def save() {
 		def x = new TwitterService()
-		def result = x.tweet("${params.msg} ${new java.util.Date()}",params.pin)
+		def result = x.tweet("${params.msg} ${new java.util.Date()}")
 		
 		flash.message = message(code: 'default.created.message', args: [message(code: 'tweet.label', default: 'Tweet'), 1])
         redirect(action: "show", id: 1)
