@@ -2,8 +2,8 @@
 
 <g:javascript>
 	function updatePrice(e){
-		alert(e);
-		document.getElementById("price").value = eval(e);
+		alert(e.responseText);
+		document.getElementById("price").value = e.responseText;
 	}
 </g:javascript>
 
@@ -12,12 +12,13 @@
 		<g:message code="debit.faultDescription.label" default="Fault Description" />
 
 	</label>
+	
 	<g:select name="faultDescription" from="${gambetta.system.Fault.list()}"
 		onchange="${remoteFunction(
             controller:'fault', 
             action:'getFaultValue', 
-            params:'\'id=\' + escape(this.key)', 
-            onComplete:'updatePrice(e)')}"
+            params:'\'id=\' + this.value', 
+            onComplete:'updatePrice(XMLHttpRequest)')}"
 	   optionKey="id" optionValue="name" value="${debitInstance?.faultDescription}"/>
 </div>
 
