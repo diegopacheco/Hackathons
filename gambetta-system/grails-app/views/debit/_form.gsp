@@ -2,7 +2,6 @@
 
 <g:javascript>
 	function updatePrice(e){
-		alert(e.responseText);
 		document.getElementById("price").value = e.responseText;
 	}
 </g:javascript>
@@ -43,6 +42,6 @@
 		<g:message code="debit.value.label" default="Value" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:field type="number" name="value" min="0.5" required="" value="${fieldValue(bean: debitInstance, field: 'value')}" id="price"/>
+	<g:field type="number" name="value" min="0.5" required="" value="${fieldValue(bean: debitInstance, field: 'value')}" id="price" readonly="true"/>
 </div>
 
