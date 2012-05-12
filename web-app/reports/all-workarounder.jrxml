@@ -12,7 +12,7 @@
 		<band height="88">
 			<image>
 				<reportElement x="25" y="0" width="75" height="75"/>
-				<imageExpression class="java.lang.String"><![CDATA["C:\\workarea\\workspaces\\unisinos\\gambetta\\Hackathons\\gambetta-system\\web-app\\images\\gambettinha.jpg"]]></imageExpression>
+				<imageExpression class="java.lang.String"><![CDATA["../images/gambettinha.jpg"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="104" y="26" width="377" height="27" forecolor="#009966"/>
