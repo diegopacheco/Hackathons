@@ -1,14 +1,9 @@
-from twisted.web import server, resource
-from twisted.internet import reactor
+from flask import Flask
+app = Flask(__name__)
 
-class HelloResource(resource.Resource):
-    isLeaf = True
-    numberRequests = 0
-    
-    def render_GET(self, request):
-        self.numberRequests += 1
-        request.setHeader("content-type", "text/plain")
-        return "I am request #" + str(self.numberRequests) + "\n"
+@app.route("/api/badges/<id>")
+def retrieve_badge(id):
+    return "Hello World! fro ID: " id
 
-reactor.listenTCP(8080, server.Site(HelloResource()))
-reactor.run()
+if __name__ == "__main__":
+    app.run()
