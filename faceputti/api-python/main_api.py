@@ -1,12 +1,14 @@
-from twisted.internet import protocol, reactor
+from twisted.web import server, resource
+from twisted.internet import reactor
 
-class Echo(protocol.Protocol):
-    def dataReceived(self, data):
-        self.transport.write(data)
+class HelloResource(resource.Resource):
+    isLeaf = True
+    numberRequests = 0
+    
+    def render_GET(self, request):
+        self.numberRequests += 1
+        request.setHeader("content-type", "text/plain")
+        return "I am request #" + str(self.numberRequests) + "\n"
 
-class EchoFactory(protocol.Factory):
-    def buildProtocol(self, addr):
-        return Echo()
-
-reactor.listenTCP(1234, EchoFactory())
+reactor.listenTCP(8080, server.Site(HelloResource()))
 reactor.run()
