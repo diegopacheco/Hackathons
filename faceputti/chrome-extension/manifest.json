@@ -1,0 +1,18 @@
+
+  {
+  "name": "Faceputti Extension",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Faceputti",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+   "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "client.html"
+  },
+  "permissions": [
+    "https://trello.com/1/authorize?response_type=token&key=2afaa43cd5cc22716bdfcf272be0d0f5&return_url=file%3A%2F%2F&callback_method=postMessage&scope=read&expiration=30days"
+  ]
+
+}
