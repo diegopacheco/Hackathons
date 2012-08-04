@@ -19,8 +19,8 @@ def retrieve_people_all():
 	 x = x + json.dumps(gambero, default=json_util.default)
 	return x
 	
-	
-def load():
+@route("/api/load/db")	
+def load_db():
 	connection.drop_database("cowboy-database")
 	db = connection['cowboy-database']
 	collection = db['cowboy-collection']
@@ -32,6 +32,6 @@ def load():
 			"rank": "25",
 			"badges": ["cowboy","cooker"]}
 	collection.insert(user2)
-
-load()
+	return "DONE"
+	
 run(host='localhost', port=8080)
