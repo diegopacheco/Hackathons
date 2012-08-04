@@ -41,8 +41,6 @@ $(function(){
 	}
  });
 
-//var person = new Person();
-//person.set({name: "teste", age: "26"});
 window.App = new PersonView;
 window.App.render();
 });
