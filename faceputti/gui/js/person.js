@@ -6,21 +6,37 @@ $(function(){
     id: "1",		
 		name: "Gambeiro",
 		rank: "24",
-		badges: []
+		badges: 'cooker' 
 	}
+
 
 });
 
+ window.PersonList = Backbone.Collection.extend({
+ 	model: Person
+ });
+
+ var p1 = new Person({id: "1", name: "toto", rank: "11", badges: "cooker"});
+ var p2 = new Person({id: "2", name: "toto2", rank: "12", badges: "cowboy"});
+ window.Persons = new PersonList([p1, p2]);
+
  PersonView = Backbone.View.extend({
-	el: $('#name'),
-	model: new Person,
+	el: $('#gambeiros'),
 	initialize: function(){
-		this.model.bind('change', this.render, this);
+		Persons.bind('change', this.render, this);
+		Persons.bind('all', this.render, this);
 	},
 	
 	render: function(){
-						console.log("I passed here :p");
-		this.$el.html(this.model.get('name'));
+		var html = '';
+		Persons.each(function(p){
+			html = html + '<tr>';
+			html = html + '<td>' + p.get('name') + '</td>';
+			html = html + "<td>" + p.get('rank') + "</td>";
+			html = html + '<td><img src="images/' + p.get('badges') + '.png" /></td>';
+			html = html + '</tr>';
+		});
+		this.$el.html(html);
 		return this;
 	}
  });
