@@ -1,0 +1,28 @@
+@(achievements: List[Achievement], achievementForm: Form[String])
+
+@import helper._
+
+@main("Achievements") {
+    
+    <h1>@achievements.size achievement(s)</h1>
+    
+    <ul>
+        @achievements.map { achievement =>
+            <li>
+                @achievement.label
+                
+            </li>
+        }
+    </ul>
+    
+    <h2>Add a new task</h2>
+    
+    @form(routes.AchievementController.newAchievement) {
+        
+        @inputText(achievementForm("label")) 
+        
+        <input type="submit" value="Create">
+        
+    }
+    
+}
