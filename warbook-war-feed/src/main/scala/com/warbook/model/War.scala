@@ -1,4 +1,4 @@
-package com.warbook.app
+package com.warbook.model
 
 import org.scalatra._
 
