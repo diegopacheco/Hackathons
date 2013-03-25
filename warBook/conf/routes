@@ -11,7 +11,7 @@ POST    /achievements               controllers.Achievement.newAchievement
 
 # Guerreiros
 GET     /guerreiros                 controllers.GuerreiroController.guerreiro
-POST    /guerreiros/:name           controllers.GuerreiroController.newGuerreiro
+POST    /guerreiros                 controllers.GuerreiroController.newGuerreiro
 POST    /guerreiros/:id/delete      controllers.GuerreiroController.deleteGuerreiro(id:Long)
 
 # Map static resources from the /public folder to the /assets URL path
