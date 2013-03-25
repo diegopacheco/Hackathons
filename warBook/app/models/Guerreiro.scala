@@ -6,7 +6,7 @@ object Guerreiro {
   
   def all(): List[Guerreiro] = Nil
   
-  def create(label: String) {}
+  def create(name: String) {}
   
   def delete(id: Long) {}
   

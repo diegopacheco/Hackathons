@@ -9,6 +9,10 @@ GET     /                           controllers.Application.index
 GET	    /achievements			    controllers.Achievement.list
 POST    /achievements               controllers.Achievement.newAchievement
 
+# Guerreiros
+GET     /guerreiros                 controllers.Guerreiro.guerreiro
+POST    /guerreiros                 controllers.Guerreiro.newGuerreiro
+POST    /guerreiros/:id/delete      controllers.Guerreiro.deleteGuerreiro(id: Long)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
