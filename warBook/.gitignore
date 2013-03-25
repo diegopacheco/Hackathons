@@ -3,6 +3,10 @@ project/project
 project/target
 target
 tmp
+.classpath
+.class
+/*.class
+/bin/*
 .history
 dist
 /.idea
