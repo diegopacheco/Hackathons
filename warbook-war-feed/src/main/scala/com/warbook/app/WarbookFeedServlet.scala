@@ -4,6 +4,9 @@ import org.scalatra._
 import scalate.ScalateSupport
 import org.json4s.{DefaultFormats, Formats}
 import org.scalatra.json._
+import com.warbook.model.War
+
+
 
 class WarbookFeedServlet extends WarbookWarFeedStack with JacksonJsonSupport{
   
