@@ -6,8 +6,8 @@
 GET     /                           controllers.Application.index
 
 # Achievements
-GET	    /achievements			    controllers.Achievement.list
-POST    /achievements               controllers.Achievement.newAchievement
+GET	    /achievements			    controllers.AchievementController.list
+POST    /achievements               controllers.AchievementController.newAchievement
 
 # Guerreiros
 GET     /guerreiros                 controllers.Guerreiro.guerreiro
