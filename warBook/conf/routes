@@ -14,5 +14,8 @@ GET     /guerreiros                 controllers.GuerreiroController.guerreiro
 POST    /guerreiros                 controllers.GuerreiroController.newGuerreiro
 POST    /guerreiros/:id/delete      controllers.GuerreiroController.deleteGuerreiro(id:Long)
 
+# Gravatar
+GET     /gravatar                 controllers.GravatarController.index
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
