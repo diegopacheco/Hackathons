@@ -1,0 +1,16 @@
+@(ranking: List[Ranking])
+
+@import helper._
+@main("Ranking list") {
+    
+    <h1>@ranking.size ranking(s)</h1>
+    <ul>
+        @ranking.map { ranking =>
+            <li>
+                @ranking.warrior - Guerras @ranking.wars.toString - Qtd de Guerras[@ranking.wars.size] 
+            </li>
+        }
+    </ul>
+    
+    
+}
