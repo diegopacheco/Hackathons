@@ -6,9 +6,14 @@
 GET     /                           controllers.Application.index
 
 # Achievements
-GET	    /achievements			    controllers.Achievement.list
-POST    /achievements               controllers.Achievement.newAchievement
+GET	    /achievements			    controllers.AchievementController.list
+POST    /achievements               controllers.AchievementController.newAchievement
 
+# Wars
+GET	    /wars			    controllers.WarController.wars
+POST    /wars               controllers.WarController.newWar
+POST    /wars/:id/delete       controllers.WarController.deleteWar(id: Long)
+#
 # Guerreiros
 GET     /guerreiros                 controllers.GuerreiroController.guerreiro
 POST    /guerreiros                 controllers.GuerreiroController.newGuerreiro
