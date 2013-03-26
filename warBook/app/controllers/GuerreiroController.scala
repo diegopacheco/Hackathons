@@ -16,7 +16,15 @@ object GuerreiroController extends Controller {
   
   def guerreiro       	=  Action { Ok(views.html.guerreiro(Guerreiro.all(), taskForm)) }
    
-  def newGuerreiro      =  TODO
+  def newGuerreiro      =  Action { implicit request => 
+    taskForm.bindFromRequest.fold(
+    	errors => BadRequest(views.html.guerreiro(Guerreiro.all(), errors)),
+    	name   => {
+    		Guerreiro.create(name)
+    		Redirect(routes.GuerreiroController.guerreiro)
+    	}
+    ) 
+  }
    
   def deleteGuerreiro(id: Long) = TODO
   
