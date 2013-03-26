@@ -22,7 +22,7 @@ POST    /guerreiros/:id/delete      controllers.GuerreiroController.deleteGuerre
 
 # Gravatar
 GET     /gravatar                 controllers.GravatarController.index
-=======
+
 # POSTS
 POST	/post/:id/delete			controllers.PostController.deletePost(id: Long)
 POST	/post						controllers.PostController.newPost
