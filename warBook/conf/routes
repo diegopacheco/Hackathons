@@ -10,19 +10,18 @@ GET	    /achievements			    controllers.AchievementController.list
 POST    /achievements               controllers.AchievementController.newAchievement
 
 # Wars
-GET	    /wars			    controllers.WarController.wars
-POST    /wars               controllers.WarController.newWar
-POST    /wars/:id/delete       controllers.WarController.deleteWar(id: Long)
-#
+GET	    /wars			            controllers.WarController.wars
+POST    /wars                       controllers.WarController.newWar
+POST    /wars/:id/delete            controllers.WarController.deleteWar(id: Long)
+
 # Guerreiros
 GET     /guerreiros                 controllers.GuerreiroController.guerreiro
 POST    /guerreiros                 controllers.GuerreiroController.newGuerreiro
 POST    /guerreiros/:id/delete      controllers.GuerreiroController.deleteGuerreiro(id:Long)
 
-
 # Gravatar
-GET     /gravatar                 controllers.GravatarController.index
-=======
+GET     /gravatar                   controllers.GravatarController.index
+
 # POSTS
 POST	/post/:id/delete			controllers.PostController.deletePost(id: Long)
 POST	/post						controllers.PostController.newPost

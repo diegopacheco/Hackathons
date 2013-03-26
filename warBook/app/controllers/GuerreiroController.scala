@@ -28,4 +28,14 @@ object GuerreiroController extends Controller {
    
   def deleteGuerreiro(id: Long) = TODO
   
+//  def deleteGuerreiro(id: Long) = Action { implicit request => 
+//    taskForm.bindFromRequest.fold(
+//    	errors => BadRequest(views.html.guerreiro(Guerreiro.all(), errors)),
+//    	id     => {
+//    		Guerreiro.delete(id)
+//    		Redirect(routes.GuerreiroController.guerreiro)
+//    	}
+//    ) 
+// }
+  
 }
