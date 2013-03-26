@@ -1,0 +1,30 @@
+@(wars: List[War], warForm: Form[String])
+
+@import helper._
+
+Hello warriors
+
+	<h1>@wars.size wars(s)</h1>
+    
+    <ul>
+        @wars.map { war =>
+            <li>
+                @war.label
+                
+                @form(routes.WarController.deleteWar(war.id)) {
+                    <input type="submit" value="Delete">
+                }
+            </li>
+        }
+    </ul>
+
+ 
+    <h2>Add a new war</h2>
+    
+    @form(routes.WarController.newWar) {
+        
+        @inputText(warForm("label")) 
+        
+        <input type="submit" value="Create">
+        
+    }
