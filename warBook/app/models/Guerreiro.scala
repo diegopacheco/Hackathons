@@ -1,6 +1,6 @@
 package models
 
-case class Guerreiro(id: Long, name: String)
+case class Guerreiro(id: Long, name: String, posts: List[Post])
 
 object Guerreiro {
   
