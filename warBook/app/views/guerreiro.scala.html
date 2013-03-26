@@ -1,0 +1,25 @@
+@(guerreiros: List[Guerreiro], taskForm: Form[String])
+
+@import helper._
+@main("Guerreiro list") {
+    
+    <h1>@guerreiros.size guerreiro(s)</h1>
+    <ul>
+        @guerreiros.map { guerreiro =>
+            <li>
+                @guerreiro.name
+                
+                @form(routes.GuerreiroController.deleteGuerreiro(guerreiro.id)) {
+                    <input type="submit" value="Delete">
+                }
+            </li>
+        }
+    </ul>
+    <h2>Add a new Guerreiro</h2>
+    
+    @form(routes.GuerreiroController.newGuerreiro) {
+        @inputText(taskForm("name")) 
+        <input type="submit" value="Create">
+    }
+    
+}

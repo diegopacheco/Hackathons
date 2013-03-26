@@ -9,10 +9,17 @@ GET     /                           controllers.Application.index
 GET	    /achievements			    controllers.Achievement.list
 POST    /achievements               controllers.Achievement.newAchievement
 
+<<<<<<< HEAD
 # Wars
 GET	    /wars			    controllers.WarController.wars
 POST    /wars               controllers.WarController.newWar
 POST    /wars/:id/delete       controllers.WarController.deleteWar(id: Long)
+=======
+# Guerreiros
+GET     /guerreiros                 controllers.GuerreiroController.guerreiro
+POST    /guerreiros                 controllers.GuerreiroController.newGuerreiro
+POST    /guerreiros/:id/delete      controllers.GuerreiroController.deleteGuerreiro(id:Long)
+>>>>>>> 69392504ac64cb8d9209a8e28d9c64fceee9090d
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
