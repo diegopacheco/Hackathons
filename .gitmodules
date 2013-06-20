@@ -1,0 +1,3 @@
+[submodule "kathaton"]
+	path = kathaton
+	url = https://github.com/toff63/kathaton.git
