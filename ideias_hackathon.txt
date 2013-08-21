@@ -1,0 +1,30 @@
+4-mini mapa do dev
+-automatizar o email da sexta
+-racha dos gastos da guerra (cuervo calculator)
+-bot pro gtalk
+1-sistema de eventos da galera (french book for events)
+2-espelho de classe da sala + ramal da galera
+1-site do WAT
+-sistema da fruta do marcos
+-gerador de pares para o pair programming day
+-window control
+-gerenciador do futebol
+1-dispertador para avisar o horario de lancar as horas - ze dIspertador
+-sugestao de eventos
+4-sistema de controle de caronas (tipo facebook) easy carona
+-saco maginaco do Diego - aperte o botao do diego e sai alguma coisa
+1-sistema de mercadorias - tipo o brick do DBA
+2-sistema de boca de fumo (idea do Jobs)
+-sistema de protesto (tipo waze)
+-sistema de avaliacao das festas (real time)
+2-foursquare de festas com chat
+1-stackoverflow interno
+1-jogo de gamificacao da integracao
+6-sistema para votacao do hackathon (abrir para todos os event)
+
+9-scala com play 
+4-ruby rails
+1-phyton django
+14-groovy grails
+1-angular node
+7-clojure noir
